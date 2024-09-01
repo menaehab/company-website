@@ -12,6 +12,8 @@ Route::name('front.')->group(function () {
 
 Route::name('admin.')->prefix('admin')->group(function () {
     Route::view('/', 'admin.index')->name('index');
+    Route::view('/login', 'admin.auth.login')->name('login');
+    Route::view('/register', 'admin.auth.register')->name('register');
 });
 
 // Route::get('/', function () {
