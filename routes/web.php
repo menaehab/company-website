@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 Route::name('front.')->group(function () {
     Route::view('/', 'front.index')->name('index');
@@ -11,9 +13,9 @@ Route::name('front.')->group(function () {
 });
 
 Route::name('admin.')->prefix('admin')->group(function () {
-    Route::view('/', 'admin.index')->name('index');
-    Route::view('/login', 'admin.auth.login')->name('login');
-    Route::view('/register', 'admin.auth.register')->name('register');
+    Route::middleware('auth')->group(function () {
+        Route::view('/', 'admin.index')->name('index');
+    });
 });
 
 // Route::get('/', function () {
@@ -29,5 +31,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
+Route::post('/login', [AuthenticatedSessionController::class, 'store']);
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 require __DIR__ . '/auth.php';

@@ -32,6 +32,12 @@
           <a class="dropdown-item" href="#">Profile</a>
           <a class="dropdown-item" href="#">Settings</a>
           <a class="dropdown-item" href="#">Activities</a>
+          <form action="{{ route('logout') }}" method="POST" id="logoutForm">
+            @csrf
+            <a href="javascript:void(0)" class="dropdown-item text-danger" onclick="document.getElementById('logoutForm').submit();">
+                Log out
+            </a>
+        </form>
         </div>
       </li>
     </ul>

@@ -14,8 +14,14 @@ class AuthenticatedSessionController extends Controller
     /**
      * Display the login view.
      */
-    public function create(): View
+    public function create(): View|RedirectResponse
     {
+        // Redirect authenticated users to /admin
+        if (Auth::check()) {
+            return redirect('/admin');
+        }
+
+        // Otherwise, show the login view
         return view('auth.login');
     }
 
@@ -28,7 +34,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        // Redirect to /admin after login
+        return redirect()->intended('/admin');
     }
 
     /**
