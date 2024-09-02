@@ -31,7 +31,7 @@
             <label>
               <input type="checkbox" value="remember-me" name="remember"> Stay logged in </label>
           </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Let me in</button>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
           <p class="mt-5 mb-3 text-muted">© 2020</p>
         </form>
       </div>

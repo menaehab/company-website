@@ -1,7 +1,10 @@
+@php
+    $dir = LaravelLocalization::getCurrentLocale() == 'ar' ? 'rtl' : '';
+@endphp
 <!doctype html>
 <html lang="en">
 @include('admin.partials.head')
-<body class="vertical  light  ">
+<body class="vertical  light  {{ $dir }}">
     <div class="wrapper">
         <main role="main" class="main-content">
             @include('admin.partials.navbar')
