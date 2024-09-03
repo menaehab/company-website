@@ -38,7 +38,7 @@
           <form action="{{ route('logout') }}" method="POST" id="logoutForm">
             @csrf
             <a href="javascript:void(0)" class="dropdown-item text-danger" onclick="document.getElementById('logoutForm').submit();">
-                Log out
+                {{ __('keywords.logout') }}
             </a>
         </form>
         </div>
