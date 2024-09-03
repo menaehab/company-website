@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\ServiceController;
 
 Route::name('front.')->group(function () {
     Route::view('/', 'front.index')->name('index');
@@ -19,6 +20,7 @@ Route::name('admin.')
         ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'auth']
     )->group(function () {
         Route::view('/', 'admin.index')->name('index');
+        Route::resource('services', ServiceController::class);
     });
 
 Route::get(LaravelLocalization::setLocale() . '/login', [AuthenticatedSessionController::class, 'create'])
@@ -37,6 +39,9 @@ Auth::routes(['register' => 'false']);
 Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
     ->name('logout');
 
+
+
+
 // Route::get('/', function () {
 //     return view('front.index');
 // });
@@ -50,5 +55,6 @@ Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
 //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 // });
+
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
