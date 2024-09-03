@@ -19,5 +19,8 @@ return [
     'description' => 'الوصف',
     'actions' => 'العمليات',
     'no_records' => 'لم يتم العثور على سجلات',
-    'add_new' => 'اضافة',
+    'add_new' => 'اضافة خدمة',
+    'create_service' =>  'اضافة خدمة',
+    'save' =>  'حفظ',
+    'create_successfully' => 'تم إنشاء سجلك بنجاح',
 ];

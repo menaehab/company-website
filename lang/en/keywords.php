@@ -19,6 +19,8 @@ return [
     'description' => 'Description',
     'actions' => 'Actions',
     'no_records' => 'No records found',
-    'add_new' => 'Add New'
-
+    'add_new' => 'Add New',
+    'create_service' =>  'Create Service',
+    'save' =>  'Save',
+    'create_successfully' => 'Your record created successfully',
 ];
