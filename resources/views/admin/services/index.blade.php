@@ -12,9 +12,7 @@
             </div>
             <div class="card shadow">
                 <div class="card-body">
-                    @if (session('success'))
-                        <div class="alert alert-success">{{ session('success') }}</div>
-                    @endif
+                    <x-success-alert></x-success-alert>
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -48,11 +46,7 @@
                                     </tr>
                                 @endforeach
                             @else
-                                <tr>
-                                    <td colspan="4">
-                                        <div class="alert alert-danger">{{ __('keywords.no_records') }}</div>
-                                    </td>
-                                </tr>
+                                <x-empty-alert></x-empty-alert>
                             @endif
                         </tbody>
                     </table>
