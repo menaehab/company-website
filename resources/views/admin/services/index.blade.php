@@ -13,7 +13,7 @@
             <div class="card shadow">
                 <div class="card-body">
                     @if (session('success'))
-                    <div class="alert alert-success">{{ session('success') }}</div>
+                        <div class="alert alert-success">{{ session('success') }}</div>
                     @endif
                     <table class="table table-hover">
                         <thead>
@@ -32,8 +32,8 @@
                                         <td>{{ $service->title }}</td>
                                         <td><i class="fe {{ $service->icon }} fa-2x"></i></td>
                                         <td>
-                                            <a href="#" class="btn btn-sm btn-primary"><i
-                                                    class="fe fe-eye fa-2x"></i></a>
+                                            <a href="{{ route('admin.services.show', ['service' => $service]) }}"
+                                                class="btn btn-sm btn-primary"><i class="fe fe-eye fa-2x"></i></a>
                                             <a href="#" class="btn btn-sm btn-warning"><i
                                                     class="fe fe-edit fa-2x"></i></a>
                                             <a href="#" class="btn btn-sm btn-danger"><i
