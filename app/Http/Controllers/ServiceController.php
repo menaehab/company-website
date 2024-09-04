@@ -66,6 +66,7 @@ class ServiceController extends Controller
      */
     public function destroy(Service $service)
     {
-        //
+        $service->delete();
+        return redirect()->route('admin.services.index')->with('success', __('keywords.delete_successfully'));
     }
 }

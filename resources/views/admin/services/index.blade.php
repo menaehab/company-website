@@ -36,8 +36,14 @@
                                                 class="btn btn-sm btn-primary"><i class="fe fe-eye fa-2x"></i></a>
                                             <a href="{{ route('admin.services.edit', ['service' => $service]) }}"
                                                 class="btn btn-sm btn-warning"><i class="fe fe-edit fa-2x"></i></a>
-                                            <a href="#" class="btn btn-sm btn-danger"><i
-                                                    class="fe fe-trash-2 fa-2x"></i></a>
+                                            <form action="{{ route('admin.services.destroy', ['service' => $service]) }}"
+                                                method="POST" class="d-inline" id="deleteForm-{{ $service->id }}">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="button" class="btn btn-sm btn-danger">
+                                                    <i class="fe fe-trash-2 fa-2x"
+                                                        onclick="confirmDelete({{ $service->id }})"></i></button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -56,4 +62,11 @@
         </div>
         <!-- simple table -->
     </div>
+    <script>
+        function confirmDelete(id) {
+            if (confirm('Are you sure you want to delete this record?')) {
+                document.getElementById('deleteForm-' + id).submit();
+            }
+        }
+    </script>
 @endsection
