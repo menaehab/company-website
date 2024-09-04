@@ -34,8 +34,8 @@
                                         <td>
                                             <a href="{{ route('admin.services.show', ['service' => $service]) }}"
                                                 class="btn btn-sm btn-primary"><i class="fe fe-eye fa-2x"></i></a>
-                                            <a href="#" class="btn btn-sm btn-warning"><i
-                                                    class="fe fe-edit fa-2x"></i></a>
+                                            <a href="{{ route('admin.services.edit', ['service' => $service]) }}"
+                                                class="btn btn-sm btn-warning"><i class="fe fe-edit fa-2x"></i></a>
                                             <a href="#" class="btn btn-sm btn-danger"><i
                                                     class="fe fe-trash-2 fa-2x"></i></a>
                                         </td>

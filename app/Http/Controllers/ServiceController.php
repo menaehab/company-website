@@ -32,7 +32,7 @@ class ServiceController extends Controller
     {
         $data = $request->validated();
         Service::create($data);
-        return redirect()->route('admin.services.index')->with('success', 'Service created successfully');
+        return redirect()->route('admin.services.index')->with('success', __('keywords.create_successfully'));
     }
 
     /**
@@ -48,7 +48,7 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        //
+        return view('admin.services.edit', get_defined_vars());
     }
 
     /**
@@ -56,7 +56,9 @@ class ServiceController extends Controller
      */
     public function update(UpdateServiceRequest $request, Service $service)
     {
-        //
+        $data = $request->validated();
+        $service->update($data);
+        return redirect()->route('admin.services.index')->with('success', __('keywords.update_successfully'));
     }
 
     /**

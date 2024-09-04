@@ -35,4 +35,5 @@ return [
     'show' => 'Show',
     'delete_confirmation' => 'Are you sure you want to delete this record?',
     'delete_confirmation_title' => 'Delete Confirmation',
+    'type_something' =>  'Type something...',
 ];

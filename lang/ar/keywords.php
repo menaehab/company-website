@@ -31,8 +31,9 @@ return [
     'delete' => 'يمسح',
     'cancel' => 'يلغي',
     'back' => 'خلف',
-    'edit' => 'يحرر',
+    'edit' => 'تعديل',
     'show' => 'يعرض',
     'delete_confirmation' => 'هل أنت متأكد أنك تريد حذف هذا السجل؟',
     'delete_confirmation_title' => 'التأكيد الحذف',
+    'type_something' =>  'اكتب شيئًا ...',
 ];
