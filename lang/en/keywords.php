@@ -16,6 +16,7 @@ return [
     'components' => 'Components',
     'title' => 'Title',
     'icons' => 'Icons',
+    'icon' => 'Icon',
     'description' => 'Description',
     'actions' => 'Actions',
     'no_records' => 'No records found',

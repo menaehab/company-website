@@ -16,6 +16,7 @@ return [
     'components' => 'مكونات',
     'title' => 'العنوان',
     'icons' => 'الايقونات',
+    'icon' => 'الايقونة',
     'description' => 'الوصف',
     'actions' => 'العمليات',
     'no_records' => 'لم يتم العثور على سجلات',
