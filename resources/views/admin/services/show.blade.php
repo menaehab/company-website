@@ -3,7 +3,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="col my-4">
-            <h3 class="card-title">{{ __('keywords.create_service') }}</h3>
+            <h3 class="card-title">{{ __('keywords.service') }}</h3>
             <div class="card shadow">
                 <div class="card-body">
                     <div class="row">

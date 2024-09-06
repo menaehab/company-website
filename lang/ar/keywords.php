@@ -39,4 +39,9 @@ return [
     'type_something' =>  'اكتب شيئًا ...',
     'features' => 'المميزات',
     'feature' => 'المميزة',
+    'messages' => 'رسائل',
+    'message' => 'رسالة',
+    'show_message' =>  'عرض الرسالة',
+    'name' => 'اسم',
+    'subject' => 'موضوع',
 ];

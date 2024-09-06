@@ -39,4 +39,9 @@ return [
     'type_something' =>  'Type something...',
     'features' => 'Features',
     'feature' => 'Feature',
+    'messages' => 'Messages',
+    'message' => 'Message',
+    'show_message' => 'Show Message',
+    'name' => 'Name',
+    'subject' => 'Subject',
 ];
