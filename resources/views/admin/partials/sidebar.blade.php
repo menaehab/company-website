@@ -30,6 +30,8 @@
                     name="{{ __('keywords.features') }}"></x-tab-component>
                 <x-tab-component href="{{ route('admin.messages.index') }}" icon="fe-message-square"
                     name="{{ __('keywords.messages') }}"></x-tab-component>
+                <x-tab-component href="{{ route('admin.subscribers.index') }}" icon="fe-users"
+                    name="{{ __('keywords.subscribers') }}"></x-tab-component>
             </ul>
     </nav>
 </aside>

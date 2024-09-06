@@ -44,4 +44,6 @@ return [
     'show_message' =>  'عرض الرسالة',
     'name' => 'اسم',
     'subject' => 'موضوع',
+    'subscribers' => 'المشتركين',
+    'subscriber' => 'المشترك',
 ];

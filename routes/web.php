@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SubscriberController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FeatureController;
@@ -25,6 +26,7 @@ Route::name('admin.')
         Route::resource('services', ServiceController::class);
         Route::resource('features', FeatureController::class);
         Route::resource('messages', MessageController::class)->only(['index', 'show', 'destroy']);
+        Route::resource('subscribers', SubscriberController::class)->only(['index', 'destroy']);
     });
 
 Route::get(LaravelLocalization::setLocale() . '/login', [AuthenticatedSessionController::class, 'create'])

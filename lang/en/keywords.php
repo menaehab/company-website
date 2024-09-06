@@ -44,4 +44,6 @@ return [
     'show_message' => 'Show Message',
     'name' => 'Name',
     'subject' => 'Subject',
+    'subscribers' => 'Subscribers',
+    'subscriber' => 'Subscriber',
 ];
