@@ -26,6 +26,8 @@
             <ul class="navbar-nav flex-fill w-100 mb-2">
                 <x-tab-component href="{{ route('admin.services.index') }}" icon="fe-codesandbox"
                     name="{{ __('keywords.services') }}"></x-tab-component>
+                <x-tab-component href="{{ route('admin.features.index') }}" icon="fe-star"
+                    name="{{ __('keywords.features') }}"></x-tab-component>
             </ul>
     </nav>
 </aside>

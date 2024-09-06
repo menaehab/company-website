@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\ServiceController;
 
 Route::name('front.')->group(function () {
     Route::view('/', 'front.index')->name('index');
@@ -21,6 +22,7 @@ Route::name('admin.')
     )->group(function () {
         Route::view('/', 'admin.index')->name('index');
         Route::resource('services', ServiceController::class);
+        Route::resource('features', FeatureController::class);
     });
 
 Route::get(LaravelLocalization::setLocale() . '/login', [AuthenticatedSessionController::class, 'create'])
