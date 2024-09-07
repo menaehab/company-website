@@ -28,7 +28,7 @@
                                     <tr>
                                         <td>{{ $services->firstItem() + $loop->index }}</td>
                                         <td>{{ $service->title }}</td>
-                                        <td><i class="fe {{ $service->icon }} fa-2x"></i></td>
+                                        <td>{{ $service->icon }}</td>
                                         <td>
                                             <x-action-button
                                                 href="{{ route('admin.services.show', ['service' => $service]) }}"

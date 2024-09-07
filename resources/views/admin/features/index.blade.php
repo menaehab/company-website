@@ -28,7 +28,7 @@
                                     <tr>
                                         <td>{{ $features->firstItem() + $loop->index }}</td>
                                         <td>{{ $feature->title }}</td>
-                                        <td><i class="fe {{ $feature->icon }} fa-2x"></i></td>
+                                        <td>{{ $feature->icon }}</td>
                                         <td>
                                             <x-action-button
                                                 href="{{ route('admin.features.show', ['feature' => $feature]) }}"
