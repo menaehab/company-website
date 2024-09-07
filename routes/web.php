@@ -9,6 +9,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\TestmonialController;
 
 Route::name('front.')->group(function () {
     Route::view('/', 'front.index')->name('index');
@@ -27,6 +28,7 @@ Route::name('admin.')
         Route::resource('features', FeatureController::class);
         Route::resource('messages', MessageController::class)->only(['index', 'show', 'destroy']);
         Route::resource('subscribers', SubscriberController::class)->only(['index', 'destroy']);
+        Route::resource('testmonials', TestmonialController::class);
     });
 
 Route::get(LaravelLocalization::setLocale() . '/login', [AuthenticatedSessionController::class, 'create'])

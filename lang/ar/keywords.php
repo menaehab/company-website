@@ -46,4 +46,11 @@ return [
     'subject' => 'موضوع',
     'subscribers' => 'المشتركين',
     'subscriber' => 'المشترك',
+    'testmonials' => 'اراء الاشخاص',
+    'testmonial' => 'راي شخص',
+    'image' => 'صورة',
+    'position' => 'المركز',
+    'add_testmonial' => 'إضافة راي',
+    'edit_testmonial' => 'تحرير راي',
+    'show_testmonial' => 'عرض راي',
 ];

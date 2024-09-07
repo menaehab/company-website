@@ -46,4 +46,11 @@ return [
     'subject' => 'Subject',
     'subscribers' => 'Subscribers',
     'subscriber' => 'Subscriber',
+    'testmonials' => 'Testmonials',
+    'testmonial' => 'Testmonial',
+    'image' => 'Image',
+    'position' => 'Position',
+    'add_testmonial' => 'Add Testmonial',
+    'edit_testmonial' => 'Edit Testmonial',
+    'show_testmonial' => 'Show Testmonial',
 ];
