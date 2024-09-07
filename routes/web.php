@@ -14,6 +14,7 @@ use App\Http\Controllers\SettingController;
 use App\Http\Controllers\TestmonialController;
 
 Route::name('front.')->controller(FrontController::class)->group(function () {
+    Route::post('/subscriber/store', 'subscriberStore')->name('subscriber.store');
     Route::get('/', 'index')->name('index');
     Route::get('/about', 'about')->name('about');
     Route::get('/service', 'service')->name('service');
@@ -49,9 +50,6 @@ Auth::routes(['register' => 'false']);
 
 Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
     ->name('logout');
-
-
-
 
 // Route::get('/', function () {
 //     return view('front.index');
