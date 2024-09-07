@@ -22,14 +22,19 @@ class StoreMessageRequest extends FormRequest
     public function rules(): array
     {
         return [
-            // 'title'  => 'required|string',
+            'name'  => 'required|string',
+            'email'  => 'required|email',
+            'subject' => 'required|string',
+            'message'  => 'required|string',
         ];
     }
     public function attributes(): array
     {
         return [
-            // 'title'  => __('keywords.title'),
-
+            'name'  => __('keywords.name'),
+            'email'  => __('keywords.email'),
+            'subject'  => __('keywords.subject'),
+            'message'  => __('keywords.message'),
         ];
     }
 }

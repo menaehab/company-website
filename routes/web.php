@@ -19,6 +19,7 @@ Route::name('front.')->controller(FrontController::class)->group(function () {
     Route::get('/about', 'about')->name('about');
     Route::get('/service', 'service')->name('service');
     Route::get('/contact', 'contact')->name('contact');
+    Route::post('/contact/store', 'contactStore')->name('contact.store');
 });
 
 Route::name('admin.')
