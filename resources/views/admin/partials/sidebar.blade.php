@@ -34,6 +34,8 @@
                     name="{{ __('keywords.subscribers') }}"></x-tab-component>
                 <x-tab-component href="{{ route('admin.testmonials.index') }}" icon="fe-smile"
                     name="{{ __('keywords.testmonials') }}"></x-tab-component>
+                <x-tab-component href="{{ route('admin.settings.index') }}" icon="fe-settings"
+                    name="{{ __('keywords.settings') }}"></x-tab-component>
             </ul>
     </nav>
 </aside>

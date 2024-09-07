@@ -53,4 +53,13 @@ return [
     'add_testmonial' => 'إضافة راي',
     'edit_testmonial' => 'تحرير راي',
     'show_testmonial' => 'عرض راي',
+    'settings' => 'إعدادات',
+    'address' => 'عنوان',
+    'phone' => 'هاتف',
+    'facebook' =>'فيس بوك',
+    'twitter' =>'تويتر',
+    'instagram' =>'انستا جرام',
+    'youtube' =>'يوتيويب',
+    'linkedin' =>'لينكد ان',
+    'edit_settings' => 'تحرير الإعدادات',
 ];

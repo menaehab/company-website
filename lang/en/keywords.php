@@ -53,4 +53,13 @@ return [
     'add_testmonial' => 'Add Testmonial',
     'edit_testmonial' => 'Edit Testmonial',
     'show_testmonial' => 'Show Testmonial',
+    'settings' => 'Settings',
+    'address' => 'Address',
+    'phone' => 'phone',
+    'facebook' =>'Facebook',
+    'twitter' =>'Twitter',
+    'instagram' =>'Instagram',
+    'youtube' =>'Youtube',
+    'linkedin' =>'Linkedin',
+    'edit_settings' => 'Edit Settings',
 ];
