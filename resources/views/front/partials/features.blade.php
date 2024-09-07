@@ -10,60 +10,7 @@
             </div>
             <div class="col-lg-7">
                 <div class="row g-5">
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-cubes text-white"></i>
-                            </div>
-                            <h6 class="mb-0">Best In Industry</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-percent text-white"></i>
-                            </div>
-                            <h6 class="mb-0">99% Success Rate</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-award text-white"></i>
-                            </div>
-                            <h6 class="mb-0">Award Winning</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-smile-beam text-white"></i>
-                            </div>
-                            <h6 class="mb-0">100% Happy Client</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-user-tie text-white"></i>
-                            </div>
-                            <h6 class="mb-0">Professional Advisors</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
-                                <i class="fa fa-headset text-white"></i>
-                            </div>
-                            <h6 class="mb-0">24/7 Customer Support</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam eos diam dolor</span>
-                    </div>
+                    <x-front-features></x-front-features>
                 </div>
             </div>
         </div>
