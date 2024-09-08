@@ -79,6 +79,7 @@ class TeamController extends Controller
     public function destroy(Team $team)
     {
         $team->delete();
+        Storage::delete("public/teams/$team->image");
         return redirect()->route('admin.teams.index')->with('success', __('keywords.delete_successfully'));
     }
 }
