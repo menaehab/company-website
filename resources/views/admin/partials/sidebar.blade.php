@@ -30,10 +30,12 @@
                     name="{{ __('keywords.features') }}"></x-tab-component>
                 <x-tab-component href="{{ route('admin.messages.index') }}" icon="fe-message-square"
                     name="{{ __('keywords.messages') }}"></x-tab-component>
-                <x-tab-component href="{{ route('admin.subscribers.index') }}" icon="fe-users"
+                <x-tab-component href="{{ route('admin.subscribers.index') }}" icon="fe-tag"
                     name="{{ __('keywords.subscribers') }}"></x-tab-component>
                 <x-tab-component href="{{ route('admin.testmonials.index') }}" icon="fe-smile"
                     name="{{ __('keywords.testmonials') }}"></x-tab-component>
+                <x-tab-component href="{{ route('admin.teams.index') }}" icon="fe-users"
+                    name="{{ __('keywords.teams') }}"></x-tab-component>
                 <x-tab-component href="{{ route('admin.settings.index') }}" icon="fe-settings"
                     name="{{ __('keywords.settings') }}"></x-tab-component>
             </ul>

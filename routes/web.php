@@ -1,17 +1,18 @@
 <?php
 
-use App\Http\Controllers\SubscriberController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\SettingController;
+use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\TestmonialController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\FrontController;
-use App\Http\Controllers\SettingController;
-use App\Http\Controllers\TestmonialController;
 
 Route::name('front.')->controller(FrontController::class)->group(function () {
     Route::post('/subscriber/store', 'subscriberStore')->name('subscriber.store');
@@ -33,6 +34,7 @@ Route::name('admin.')
         Route::resource('messages', MessageController::class)->only(['index', 'show', 'destroy']);
         Route::resource('subscribers', SubscriberController::class)->only(['index', 'destroy']);
         Route::resource('testmonials', TestmonialController::class);
+        Route::resource('teams', TeamController::class);
         Route::resource('settings', SettingController::class)->only(['index', 'update']);
     });
 

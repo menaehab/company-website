@@ -62,4 +62,10 @@ return [
     'youtube' =>'Youtube',
     'linkedin' =>'Linkedin',
     'edit_settings' => 'Edit Settings',
+    'teams'=> 'Team Member',
+    'team' => 'Member',
+    'edit_team'  => 'Edit Member',
+    'show_team'  => 'Show Member',
+    'add_team'  => 'Add Member',
+    'create_testmonial' =>  'Create Testmonial',
 ];
